@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		.bg {
+			position: relative;
+			display: flex;
+			width: 1080px;
+			height: 1080px;
+			background-color: #ffd701;
+		}
+
+		.bg-logo{
+			position: absolute;
+			top: 25px;
+			left: 25px;
+		}
+
+		.bg-horizontal-line{
+			position: absolute;
+			width: 700px;
+			height: 10px;
+			background-color: white;
+			left: 125px;
+			top: 120px;
+		}
+
+		.bg-vertical-line{
+			position: absolute;
+			width: 10px;
+			height: 220px;
+			background-color: white;
+			left: 116px;
+			top: 125px;
+		}
+
+		.bg-image{
+			position: absolute;
+			width: 100%;
+		}
+
+		.content {
+			z-index: 1;
+			position: absolute;
+			top: 135px;
+			left: 135px;
+			width: 90%;
+			height: 300px;
+			color: white;
+			font-family: "Agency FB";
+			font-size: 50px;
+			font-weight: bold;
+			background-color: transparent;
+			border: none;
+    		overflow: auto;
+    		outline: none;
+    	}
+
+		.image{
+			position: absolute;
+			width: 400px;
+			height:400px;
+			bottom: 0px;
+			right: 0px;
+		}
+
+		.image-frame {
+			position: absolute;
+			width: 400px;
+			height: 400px;
+		  	bottom: 0px;
+		  	right: 0px;
+		  	line-height: 500px;
+		}
+
+		.image-frame:before {
+		  position: absolute;
+		  content: '';
+		  bottom: 0px;
+		  right: 0px;
+		  height: 100%;
+		  width: 100%;
+		  transform: rotateX(0deg) rotateZ(0deg);
+		  border-top: 50px solid #C6A700;
+		  border-left: 50px solid #C6A700;
+		  box-shadow: -35px -35px #ffe764;
+		}
+
+	</style>
+
+	<title>qrypto-quotes</title>
+
+</head>
+<body>
+	<div class="bg">
+			<img class="bg-logo" src="img/qrypto-logo-white.png">
+			<div class="bg-horizontal-line"></div>
+			<div class="bg-vertical-line"></div>
+			<textarea class="content"></textarea>
+			<img class="bg-image" src="img/qrypto-quotes-bg.png">
+
+      		<!-- image -->
+      		<div>
+      			<img class="image" src="image.jpeg">      		
+      		</div>
+			<!-- image -->
+
+      		<div class="image-frame">
+      		</div>
+	</div>
+</body>
+</html>
